@@ -20,6 +20,7 @@ class Account extends Component {
         path: "/",
       },
     ];
+
     const navbarLinks = [
       {
         _id: 0,
@@ -38,10 +39,11 @@ class Account extends Component {
     this.props.setHeaderLinks(headerLinks);
     this.props.setNavbarLinks(navbarLinks);
   }
+
   renderContent() {
     let jsx;
     if (this.props.navbarLinks) {
-      this.props.navbarLinks.map((link) => {
+      this.props.navbarLinks.forEach((link) => {
         if (link.active) {
           jsx = link.component;
         }
@@ -49,6 +51,7 @@ class Account extends Component {
     }
     return jsx;
   }
+
   render() {
     return <div className="account">{this.renderContent()}</div>;
   }

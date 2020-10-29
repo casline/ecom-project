@@ -24,7 +24,7 @@ export class FormButton extends Component {
       <div className={`${className} form-button`}>
         <button
           className={`form-button__button ${
-            short ? `form-button__gray-button` : ""
+            short ? "form-button__gray-button" : ""
           }`}
           type={type}
           {...input}

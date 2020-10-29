@@ -1,6 +1,6 @@
 .details {
   display: grid;
-  row-gap: 13px;
+  grid-row-gap: 13px;
 
   &__title {
     padding-bottom: 7px;
@@ -12,14 +12,7 @@
   &__links {
     font-size: 14px;
     display: grid;
-    row-gap: 10px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-
-    &:hover {
-      color: black;
-    }
-
+    grid-row-gap: 10px;
     & > * {
       text-decoration-line: underline;
     }

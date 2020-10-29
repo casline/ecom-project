@@ -10,6 +10,7 @@ class Purchases extends Component {
 
   render() {
     const { className } = this.props;
+
     return (
       <div className={`${className} purchases`}>
         {this.props.purchases.map((purchase) => {
@@ -21,7 +22,7 @@ class Purchases extends Component {
             >
               <img
                 className="purchase__img"
-                src="http://via.placeholder.com/80/80"
+                src="http://via.placeholder.com/80x80"
               />
             </a>
           );

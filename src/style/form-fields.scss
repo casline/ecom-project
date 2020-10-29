@@ -1,6 +1,6 @@
 .form-input {
   display: grid;
-  gap: 6.5px;
+  grid-gap: 6.5px;
 
   & > * {
     padding-left: 20px;
@@ -9,7 +9,6 @@
   &__label {
     font-size: 14px;
   }
-
   &__input {
     box-sizing: border-box;
     height: 39px;
@@ -27,9 +26,9 @@
     width: 243px;
     border-radius: 20px;
     background-color: #00cb79;
+
     font-size: 16px;
     color: white;
-    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -37,7 +36,7 @@
   }
 
   &__gray-button {
-    background-color: #999999;
+    background: #999;
     width: 137px;
   }
 }
