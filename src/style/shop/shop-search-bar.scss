@@ -26,13 +26,14 @@
   &__icon {
     grid-row: s/e;
     grid-column: s/icon-e;
-    font-size: 20px;
+    font-size: 18px;
     z-index: 100;
     align-self: center;
   }
   &__input {
     grid-row: s/e;
     grid-column: 1 / e;
+
     padding-left: 50px;
   }
 }
